@@ -12,17 +12,13 @@ A lightweight React utility to automatically generate **skeleton loaders** for a
 
 ## 📦 Installation
 
-### Using npm
-
 ```bash
 npm install react-auto-skeleton-loader
-Using yarn
-bash
-Copy code
+            OR
 yarn add react-auto-skeleton-loader
+
 🛠️ Usage
-javascript
-Copy code
+
 import { useState } from 'react';
 import { AutoSkeleton } from 'react-auto-skeleton-loader';
 
@@ -47,19 +43,12 @@ function MyComponent() {
 
 🎨 Supported Elements
 Text (<p>, <h1>–<h6>, <span>, etc.)
-
 Images (<img>)
-
 Inputs (<input>, <textarea>)
-
 Videos (<video>)
-
 Audio (<audio>)
-
 SVGs (<svg>)
-
 Canvas (<canvas>)
-
 Buttons, divs, spans, and any nested combination
 
 🔧 Props
@@ -68,13 +57,12 @@ loading	boolean	true	Whether to show skeleton placeholders or not
 children	ReactNode	—	The content to wrap with skeletons
 
 ⚡ Tips
-Wrap only the content you want skeletonized.
 
+Wrap only the content you want skeletonized.
 Perfect for loading states while fetching API data.
 
 💡 Example: Nested Components
-javascript
-Copy code
+
 <AutoSkeleton loading={loading}>
   <div>
     <h1>Dashboard</h1>
